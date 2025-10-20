@@ -1,0 +1,272 @@
+/*
+ * =========================================
+ * TEMA FUTURISTIK DARK MODE (BARU)
+ * =========================================
+ */
+
+/* Palet Warna:
+ * Background Utama: #111827 (Biru Sangat Gelap)
+ * Background Kartu: #1F2937 (Biru Gelap/Slate)
+ * Teks Utama: #E5E7EB (Putih Pudar)
+ * Teks Sekunder: #9CA3AF (Abu-abu Terang)
+ * Aksen Futuristik: #22D3EE (Cyan Elektrik)
+ * Border/Pemisah: #374151 (Abu-abu Gelap)
+ */
+
+/* Pengaturan Dasar dan Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111827; /* [BARU] Latar belakang utama */
+    color: #9CA3AF; /* [BARU] Warna teks default (sekunder) */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #1F2937; /* [BARU] Latar belakang header */
+    border-bottom: 1px solid #374151; /* [BARU] Border pemisah */
+}
+
+/* Logo (tambahkan sedikit glow) */
+.header-logo {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* [BARU] Efek glow halus pada logo */
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.2); 
+}
+
+.header-text {
+    text-align: left;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #E5E7EB; /* [BARU] Teks putih */
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #9CA3AF; /* [BARU] Teks abu-abu */
+}
+
+/* Konten Utama dan Galeri */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.gallery-container h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #E5E7EB; /* [BARU] Teks putih */
+    border-bottom: 2px solid #22D3EE; /* [BARU] Aksen Cyan */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Tata letak artikel (vertikal) */
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Kartu Proyek */
+.gallery-item {
+    background-color: #1F2937; /* [BARU] Latar belakang kartu */
+    border-radius: 8px;
+    /* [BARU] Bayangan yang lebih gelap & border halus */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #374151;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Efek Hover Futuristik (Glow) */
+.gallery-item:hover {
+    transform: scale(1.01);
+    border-color: #22D3EE; /* [BARU] Border menyala */
+    /* [BARU] Efek glow (bayangan warna cyan) */
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.25);
+}
+
+/* Gambar (tidak berubah) */
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+/* Header Kartu (Judul) */
+.item-header {
+    padding: 20px 25px 15px 25px;
+}
+
+.item-header h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #22D3EE; /* [BARU] Judul warna Aksen Cyan */
+    line-height: 1.4;
+}
+
+/* Deskripsi Kartu */
+.item-description {
+    padding: 15px 25px 20px 25px;
+}
+
+.item-description p {
+    margin: 0;
+    font-size: 1rem;
+    color: #E5E7EB; /* [BARU] Teks deskripsi lebih cerah */
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #9CA3AF; /* [BARU] Teks abu-abu */
+    border-top: 1px solid #374151; /* [BARU] Border pemisah */
+}
+
+/*
+ * =========================================
+ * TOMBOL KONTAK (Ganti tema ke Cyan)
+ * =========================================
+ */
+.contact-links {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #22D3EE; /* [BARU] Aksen Cyan */
+    color: #111827; /* [BARU] Teks gelap agar kontras */
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    /* [BARU] Bayangan glow */
+    box-shadow: 0 4px 15px rgba(34, 211, 238, 0.2);
+}
+
+.contact-button:hover {
+    background-color: #67E8F9; /* [BARU] Versi lebih cerah */
+    box-shadow: 0 6px 20px rgba(34, 211, 238, 0.3);
+    transform: translateY(-2px);
+    color: #0F172A; /* [BARU] Teks gelap (sedikit beda) */
+}
+
+
+/*
+ * =========================================
+ * LIGHTBOX (Versi Gelap)
+ * =========================================
+ */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* [BARU] Latar belakang gelap transparan */
+    background: rgba(17, 24, 39, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    /* [BARU] Bayangan glow untuk gambar popup */
+    box-shadow: 0 0 40px rgba(34, 211, 238, 0.3);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); }
+    to { transform: scale(1); }
+}
+
+/*
+ * =========================================
+ * PENYESUAIAN RESPONSIVE (MEDIA QUERIES)
+ * =========================================
+ * (Tidak ada perubahan di sini, hanya selector header)
+ */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+    main {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+        gap: 30px; /* Sedikit kurangi gap di HP */
+    }
+
+    .gallery-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .lightbox-overlay img {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    
+    .item-header h3 {
+        font-size: 1.4rem; /* Kecilkan sedikit judul kartu di HP */
+    }
+}
